@@ -35,14 +35,15 @@ DICA:
 # Sumário
 
 ### 1	COMPONENTES<br>
-Integrantes do grupo<br>
+Brenno Milanezi e Gabriel Marchezi<br>
 
 ### 2	INTRODUÇÃO E MOTIVAÇAO<br>
-Este documento contém a especificação do projeto do banco de dados <nome do projeto> e motivação da escolha realizada. <br>
+O nosso sistema tem como objetivo a administração de frotas veiculares e se chama FatCat Gestão de Frotas<br>
       
 ### 3	MINI-MUNDO<br>
-Descrever o mini-mundo. Não deve ser maior do que 30 linhas <br>
-
+O objetivo do nosso sistema é ser uma forte ferramenta na administração de grandes frotas veiculares tanto para empresas que
+possuem como produto fim a prestação de serviços veiculares tanto para empresas que possuem outros produtos/serviços fim, como exemplo uma empresa alimentícia que possue uma frota veicular. O sistema atua na administração organizacional e contábil dos veículos, gerando relatórios e comparações.<br>
+                                                                                                                                                                                           
 ### 4	RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
 
