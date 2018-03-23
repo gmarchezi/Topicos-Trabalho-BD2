@@ -35,7 +35,7 @@ DICA:
 # Sumário
 
 ### 1	COMPONENTES<br>
-Brenno Milanezi e Gabriel Marchezi<br>
+Brenno Milanezi, Gabriel Marchezi e Lucas Manço<br>
 
 ### 2	INTRODUÇÃO E MOTIVAÇAO<br>
 O nosso sistema tem como objetivo a administração de frotas veiculares e se chama FatCat Gestão de Frotas<br>
