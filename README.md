@@ -51,8 +51,8 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
 link projeto: https://balsamiq.cloud/smnw7hs/pau4a4o
 
-![Alt text](https://github.com/discipbd2/topicos-trabalho/blob/master/balsamiq.png?raw=true "Title")
-
+![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Fotos_Balsamiq/Tela%20Motorista.png "Title")
+![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Fotos_Balsamiq/Tela%20Ve%C3%ADculo.png "Title")
 
 ### 5	MODELO CONCEITUAL<br>
 #### 5.1 NOTACAO ENTIDADE RELACIONAMENTO
