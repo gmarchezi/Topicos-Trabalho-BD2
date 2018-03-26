@@ -61,7 +61,7 @@ link projeto: https://balsamiq.cloud/smnw7hs/pau4a4o
 
 ### 5	MODELO CONCEITUAL<br>
 #### 5.1 NOTACAO ENTIDADE RELACIONAMENTO
-![Alt text](https://github.com/discipbd2/topicos-trabalho/blob/master/sample_MC.png?raw=true "Modelo Conceitual")
+![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/ModeloConceitual.jpg "Modelo Conceitual")
     
      5.2 NOTACAO UML (Caso esteja fazendo a disciplina de Projeto)
 
@@ -81,6 +81,8 @@ link projeto: https://balsamiq.cloud/smnw7hs/pau4a4o
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
 
 ### 6	MODELO LÓGICO<br>
+
+![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/ModeloLogico.jpg "Modelo Lógico")
 ### 7	MODELO FÍSICO<br>
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
