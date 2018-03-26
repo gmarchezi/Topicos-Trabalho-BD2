@@ -53,6 +53,11 @@ link projeto: https://balsamiq.cloud/smnw7hs/pau4a4o
 
 ![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Fotos_Balsamiq/Tela%20Ve%C3%ADculo.png "Title")
 ![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Fotos_Balsamiq/Tela%20Motorista.png "Title")
+![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Fotos_Balsamiq/Tela%20Servi%C3%A7o.png "Title")
+![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Fotos_Balsamiq/Tela%20Cliente.png "Title")
+![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Fotos_Balsamiq/Tela%20Financiamento.png "Title")
+![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Fotos_Balsamiq/Tela%20Seguro.png "Title")
+
 
 ### 5	MODELO CONCEITUAL<br>
 #### 5.1 NOTACAO ENTIDADE RELACIONAMENTO
