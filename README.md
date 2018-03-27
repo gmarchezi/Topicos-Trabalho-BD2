@@ -10,8 +10,7 @@ Brenno Milanezi, Gabriel Marchezi e Lucas Manço<br>
 O nosso sistema tem como objetivo a administração de frotas veiculares e se chama FatCat Gestão de Frotas<br>
       
 ### 3	MINI-MUNDO<br>
-O objetivo do nosso sistema é ser uma forte ferramenta na administração de grandes frotas veiculares tanto para empresas que
-possuem como produto fim a prestação de serviços veiculares tanto para empresas que possuem outros produtos/serviços fim, como exemplo uma empresa alimentícia que possue uma frota veicular. O sistema atua na administração organizacional e contábil dos veículos, gerando relatórios e comparações.<br>
+<p align="justify">O objetivo do nosso sistema é ser uma forte ferramenta na administração de grandes frotas veiculares tanto para empresas que possuem como produto fim a prestação de serviços veiculares tanto para empresas que possuem outros produtos/serviços fim, como exemplo uma empresa alimentícia que possue uma frota veicular. O sistema atua na administração organizacional e contábil dos veículos, gerando relatórios e comparações.</p><br>
                                                                                                                                                                                            
 ### 4	RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 
@@ -23,8 +22,6 @@ link projeto: https://balsamiq.cloud/smnw7hs/pau4a4o
 ### 5	MODELO CONCEITUAL<br>
 #### 5.1 NOTACAO ENTIDADE RELACIONAMENTO
 ![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/Modelo_Final_3.PNG "Modelo Conceitual")
-    
-     5.2 NOTACAO UML (Caso esteja fazendo a disciplina de Projeto)
 
 #### 5.3 DECISÕES DE PROJETO
     [atributo]: [descrição da decisão]
