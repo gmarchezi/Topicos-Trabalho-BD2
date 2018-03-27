@@ -1,4 +1,4 @@
--- Geração de Modelo físico
+-- GeraÃ§Ã£o de Modelo fÃ­sico
 -- Sql ANSI 2003 - brModelo.
 
 
@@ -29,7 +29,7 @@ Valor_total NUMERIC(10),
 id_financiamento INTEGER PRIMARY KEY
 )
 
-CREATE TABLE Veiculo_Motorista (
+CREATE TABLE Veiculo_Motorista (
 id_veiculo_motorista INTEGER PRIMARY KEY,
 id_motorista INTEGER,
 id_veiculo INTEGER
@@ -38,7 +38,7 @@ id_veiculo INTEGER
 CREATE TABLE Veiculo_Servico (
 id_veiculo_motorista INTEGER,
 id_servico INTEGER,
-FOREIGN KEY(id_veiculo_motorista) REFERENCES Veiculo_Motorista (id_veiculo_motorista),
+FOREIGN KEY(id_veiculo_motorista) REFERENCES Veiculo_Motorista (id_veiculo_motorista),
 FOREIGN KEY(id_servico) REFERENCES Servico (id_servico)
 )
 
@@ -96,7 +96,7 @@ comprimento NUMERIC(10),
 nome_modelo VARCHAR(10)
 )
 
-ALTER TABLE Veiculo_Motorista ADD FOREIGN KEY(id_motorista) REFERENCES Motorista (id_motorista)
-ALTER TABLE Veiculo_Motorista ADD FOREIGN KEY(id_veiculo) REFERENCES Veiculo (id_veiculo)
+ALTER TABLE Veiculo_Motorista ADD FOREIGN KEY(id_motorista) REFERENCES Motorista (id_motorista)
+ALTER TABLE Veiculo_Motorista ADD FOREIGN KEY(id_veiculo) REFERENCES Veiculo (id_veiculo)
 ALTER TABLE Veiculo ADD FOREIGN KEY(id_modelo) REFERENCES Modelo (id_modelo)
 ALTER TABLE Veiculo ADD FOREIGN KEY(id_tipo) REFERENCES Tipo_Veiculo (id_tipo)
