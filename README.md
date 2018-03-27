@@ -1,37 +1,6 @@
-# TRABALHO 01 : Título do trabalho
+# FatCat Gestão de Frotas
 Trabalho desenvolvido durante a disciplina de BD
 
-    O referido projeto poderá ser:
-        a) Um novo sistema/projeto 
-        b) Uma expansão de sistema/projeto previamente desenvolvido em disciplinas anteriores 
-        (ex: Expansão dos módulos do sistema desenvolvidos em BD1 - incremento mínimo de 50% nos 
-        requisitos/complexidade)
-        c) Nas avaliações parciais do professor, o grupo deverá anotar todas as observaçoes que forem feitas pelo professor 
-        e pelo proprio grupo, enviar uma cópia das atividades por e-mail para o grupo e postar imediatamente estas observaçõe
-        como tarefas a serem realizadas como tarefas por meio do gerenciador de projetos do git.
-        d) Todas as tarefas devem ser realizadas e deve-se atentar para distribuição igualitária de atividades levando-se 
-        em consideração o peso destas.
-        e) Os tópicos numerados para cada atividade no devem ser removidos do trabalho. Entretanto, os conteúdos de exemplo 
-        em cada tópico devem ser substituídos pelo conteúdo do trabalho em desenvolvimento.
-        f) sprints de entrega serão quinzenais ou mensais definidos em aula juntamente com o professor
-    
-    OBS Importantes: 
-        a) Os projetos/sistemas propostos serão validados pelo professor e pela turma
-        b) Se possível é interessante que os novos sistemas estejam correlacionados com alguma área 
-        previamente estudada pelo aluno
-        c) Caso dependa de alguma instituição/parceiro externo, a base de dados e informações pertinentes 
-        a esta devem ser obtidas no prazo de até 15 dias apos aprovação da proposta do trabalho 
-        (caso contrário, nova proposta deverá ser apresentada a turma implicando logicamente em um prazo 
-        mais curto para realização das atividades e conclusão do trabalho)
-    
-DICA: 
-    O kickstart normalmente lança inovaçôes em termos de Sofwares e Apps, portanto pode ser interessante 
-    olhar os lançamentos recentes para incrementar as possibilidades e aguçar a criatividade, o que pode 
-    auxiliar o grupo com novas ideias na solução proposta. Acesse os links abaixo do para explorar sobre apps e softwares no Kickstarter.
-    <br>
-    https://www.kickstarter.com/discover/categories/technology/software
-    <br>
-    https://www.kickstarter.com/discover/categories/technology/apps
 # Sumário
 
 ### 1	COMPONENTES<br>
@@ -45,23 +14,15 @@ O objetivo do nosso sistema é ser uma forte ferramenta na administração de gr
 possuem como produto fim a prestação de serviços veiculares tanto para empresas que possuem outros produtos/serviços fim, como exemplo uma empresa alimentícia que possue uma frota veicular. O sistema atua na administração organizacional e contábil dos veículos, gerando relatórios e comparações.<br>
                                                                                                                                                                                            
 ### 4	RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
-
-Sugestão: https://balsamiq.com/products/mockups/<br>
 
 link projeto: https://balsamiq.cloud/smnw7hs/pau4a4o
+<br>Link Balsamiq PDF: 
 
 ![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Fotos_Balsamiq/Tela%20Ve%C3%ADculo.png "Title")
-![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Fotos_Balsamiq/Tela%20Motorista.png "Title")
-![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Fotos_Balsamiq/Tela%20Servi%C3%A7o.png "Title")
-![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Fotos_Balsamiq/Tela%20Cliente.png "Title")
-![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Fotos_Balsamiq/Tela%20Financiamento.png "Title")
-![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Fotos_Balsamiq/Tela%20Seguro.png "Title")
-
 
 ### 5	MODELO CONCEITUAL<br>
 #### 5.1 NOTACAO ENTIDADE RELACIONAMENTO
-![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/ModeloConceitual.jpg "Modelo Conceitual")
+![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/Modelo_Final_3.PNG "Modelo Conceitual")
     
      5.2 NOTACAO UML (Caso esteja fazendo a disciplina de Projeto)
 
@@ -82,8 +43,12 @@ link projeto: https://balsamiq.cloud/smnw7hs/pau4a4o
 
 ### 6	MODELO LÓGICO<br>
 
-![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/ModeloLogico.jpg "Modelo Lógico")
+![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/Logico_Final_2.PNG "Modelo Lógico")
+
 ### 7	MODELO FÍSICO<br>
+
+Link Modelo Físico: https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/SQL/Modelo_Fisico.sql
+
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
         Detalhamento sobre as informações e processo de obtenção ou geração dos dados.
