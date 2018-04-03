@@ -25,7 +25,7 @@ link projeto: https://balsamiq.cloud/smnw7hs/pau4a4o
 
 #### 5.3 DECISÕES DE PROJETO
     
-    <p align="justify">Modelo: em nosso projeto optamos por separar modelo do veiculo, pois a classe veiculo estava muito grande e isto poderia prejudicar a manutenibilidade do sistema.<br>
+<p align="justify">Modelo: em nosso projeto optamos por separar modelo do veiculo, pois a classe veiculo estava muito grande e isto poderia prejudicar a manutenibilidade do sistema.<br>
     
     [atributo]: [descrição da decisão]
     
