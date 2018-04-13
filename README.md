@@ -49,15 +49,29 @@ link projeto: https://balsamiq.cloud/smnw7hs/pau4a4o
         
     Modelo: Tabela que armazena informações referentes ao modelo do veículo.<br>
         id_modelo: Chave primária da tabela Modelo.
-        altura: Campo que armazena a altura do modelo de veículo;
-        marca: Campo que armazena a marca do modelo de veículo;
-        largura: Campo que armazena a largura do modelo de veículo;
-        peso: Campo que armazena o peso do modelo de veículo;
-        capacidade: Campo que armazena a capacidade de carga do modelo de veículo;
-        ano: Campo que armazena o ano de fabricação do modelo de veículo;
-        eixos: Campo que armazena a quantidade de eixos do modelo de veículo;
-        comprimento: Campo que armazena o comprimento do modelo de veículo;
-        nome_modelo: Campo que armazena o nome do modelo de veículo;
+        altura: Campo que armazena a altura do modelo de veículo.<br>
+        marca: Campo que armazena a marca do modelo de veículo.<br>
+        largura: Campo que armazena a largura do modelo de veículo.<br>
+        peso: Campo que armazena o peso do modelo de veículo.<br>
+        capacidade: Campo que armazena a capacidade de carga do modelo de veículo.<br>
+        ano: Campo que armazena o ano de fabricação do modelo de veículo.<br>
+        eixos: Campo que armazena a quantidade de eixos do modelo de veículo.<br>
+        comprimento: Campo que armazena o comprimento do modelo de veículo.<br>
+        nome_modelo: Campo que armazena o nome do modelo de veículo.<br>
+        
+    Seguro: Tabela que armazena informações referentes ao seguro do veículo.<br>
+        id_seguro: Chave primária da tabela Seguro.<br>
+        seguradora: Campo que armazena o nome da empresa que presta o serviço de seguro.<br>
+        plano: Campo que armazena o plano contratado.<br>
+        valor: Campo que armazena o valor pago a seguradora pelo serviço.<br>
+        data_vencimento: Campo que armazena a data de vencimento do pagamento mensal do serviço.<br>
+        fim_contrato: Campo que armazena a data do fim do contrato do serviço.<br>
+        status: Campo que armazena se o seguro está ativo ou não.<br>
+        
+    Tipo_Veiculo: Tabela que armazena informações sobre o tipo do veículo.<br>
+        id_tipo: Chave primária da tabela Tipo_Veiculo.<br>
+        tipo_combustivel: Campo que armazena o tipo de combustível utilizado pelo veículo.<br>
+        nome_tipo: Campo que armazena o tipo do veículo(ex:carro, moto, carreta...).<br>
     
     
       
