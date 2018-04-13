@@ -35,22 +35,31 @@ link projeto: https://balsamiq.cloud/smnw7hs/pau4a4o
     b) justifique!
 
 #### 5.4 DESCRIÇÃO DOS DADOS 
-    [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
     
     Veiculo: Tabela que armazena as informações referentes ao veículo.<br>
-      nome_veiculo: Campo que armazena o nome do veiculo.<br>
-      placa: Campo que armazena a placa do veículo.<br>
-      status: Campo que armazena o status do veículo, ou seja, se ele está em serviço ou não.<br>
-      chassi: Campo que armazena a numeração do chassi do veículo.<br>
-      id_veiculo: Chave primária da tabela Veiculo.<br>
-      id_modelo: Chave secundária, primária da tabela Modelo.<br>
-      id_tipo: Chave secundária, primária da tabela Tipo.<br>
-      id_financiamento: Chave secundária, primária da tabela financiamento.<br>
-      id_seguro: Chave secundária, primária da tabela Seguro.<br>
+        id_veiculo: Chave primária da tabela Veiculo.<br>
+        nome_veiculo: Campo que armazena o nome do veiculo.<br>
+        placa: Campo que armazena a placa do veículo.<br>
+        status: Campo que armazena o status do veículo, ou seja, se ele está em serviço ou não.<br>
+        chassi: Campo que armazena a numeração do chassi do veículo.<br>
+        id_modelo: Chave secundária, primária da tabela Modelo.<br>
+        id_tipo: Chave secundária, primária da tabela Tipo.<br>
+        id_financiamento: Chave secundária, primária da tabela financiamento.<br>
+        id_seguro: Chave secundária, primária da tabela Seguro.<br>
+        
+    Modelo: Tabela que armazena informações referentes ao modelo do veículo.<br>
+        id_modelo: Chave primária da tabela Modelo.
+        altura: Campo que armazena a altura do modelo de veículo;
+        marca: Campo que armazena a marca do modelo de veículo;
+        largura: Campo que armazena a largura do modelo de veículo;
+        peso: Campo que armazena o peso do modelo de veículo;
+        capacidade: Campo que armazena a capacidade de carga do modelo de veículo;
+        ano: Campo que armazena o ano de fabricação do modelo de veículo;
+        eixos: Campo que armazena a quantidade de eixos do modelo de veículo;
+        comprimento: Campo que armazena o comprimento do modelo de veículo;
+        nome_modelo: Campo que armazena o nome do modelo de veículo;
+    
+    
       
 ### 6	MODELO LÓGICO<br>
 
