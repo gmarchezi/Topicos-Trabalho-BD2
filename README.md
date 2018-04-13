@@ -40,7 +40,18 @@ link projeto: https://balsamiq.cloud/smnw7hs/pau4a4o
     EXEMPLO:
     CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
-
+    
+    Veiculo: Tabela que armazena as informações referentes ao veículo.<br>
+      nome_veiculo: Campo que armazena o nome do veiculo.<br>
+      placa: Campo que armazena a placa do veículo.<br>
+      status: Campo que armazena o status do veículo, ou seja, se ele está em serviço ou não.<br>
+      chassi: Campo que armazena a numeração do chassi do veículo.<br>
+      id_veiculo: Chave primária da tabela Veiculo.<br>
+      id_modelo: Chave secundária, primária da tabela Modelo.<br>
+      id_tipo: Chave secundária, primária da tabela Tipo.<br>
+      id_financiamento: Chave secundária, primária da tabela financiamento.<br>
+      id_seguro: Chave secundária, primária da tabela Seguro.<br>
+      
 ### 6	MODELO LÓGICO<br>
 
 ![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/Logico_Final_2.PNG "Modelo Lógico")
