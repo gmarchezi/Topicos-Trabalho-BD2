@@ -14,7 +14,6 @@ O nosso sistema tem como objetivo a administração de frotas veiculares e se ch
                                                                                                                                                                                            
 ### 4	RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 
-link projeto: https://balsamiq.cloud/smnw7hs/pau4a4o
 <br>Link Balsamiq PDF:https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/FatCat.pdf 
 
 ![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Fotos_Balsamiq/Tela%20Ve%C3%ADculo.png "Title")
