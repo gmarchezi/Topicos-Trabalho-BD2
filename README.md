@@ -72,8 +72,25 @@ link projeto: https://balsamiq.cloud/smnw7hs/pau4a4o
         id_tipo: Chave primária da tabela Tipo_Veiculo.<br>
         tipo_combustivel: Campo que armazena o tipo de combustível utilizado pelo veículo.<br>
         nome_tipo: Campo que armazena o tipo do veículo(ex:carro, moto, carreta...).<br>
+        
+    Financiamento: Tabela que armazena informações do financiamento de determinado veículo.<br>
+        id_financiamento: Chave primária da tabela Financiamento.<br>
+        financiador: Campo que armazena o nome do financiador.<br>
+        num_parcelas: Campo que armazena o número de parcelas do financiamento.<br>
+        valor_parcela: Campo que armazena o valor de cada parcela.<br>
+        valor_total: Campo que armazena o valor total do financiamento.<br>
+        
+    Veiculo_Motorista: <br> 
     
-    
+    Motorista: Tabela que armazena informações de um determinado motorista.<br>
+        id_motorista:  Chave primária da tabela Motorista.<br>
+        nome: Campo que armazena o nome do motorista.<br>
+        cpf: Campo que armazena o cpf do motorista.<br>
+        endereco: Campo que armazena o endereço do motorista.<br>
+        status: Campo que armazena o status do motorista,ou seja, se está na ativa ou não.<br>
+        num_contato: Campo que armazena um telefone de contato do motorista.<br>
+        salario: Campo que armazena o valor do salário do motorista.<br>
+        refeicao: Campo que armazena o valor do ticket alimentação do motorista.<br>
       
 ### 6	MODELO LÓGICO<br>
 
