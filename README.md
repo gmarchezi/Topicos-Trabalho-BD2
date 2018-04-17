@@ -21,7 +21,7 @@ link projeto: https://balsamiq.cloud/smnw7hs/pau4a4o
 
 ### 5	MODELO CONCEITUAL<br>
 #### 5.1 NOTACAO ENTIDADE RELACIONAMENTO
-![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/Modelo_Final_3.PNG "Modelo Conceitual")
+![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo_Conceitual_FAT.jpg "Modelo Conceitual")
 
 #### 5.3 DECISÕES DE PROJETO
     
@@ -77,7 +77,7 @@ link projeto: https://balsamiq.cloud/smnw7hs/pau4a4o
       
 ### 6	MODELO LÓGICO<br>
 
-![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/Logico_Final_2.PNG "Modelo Lógico")
+![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo_Logico_FAT.jpg "Modelo Lógico")
 
 ### 7	MODELO FÍSICO<br>
 
