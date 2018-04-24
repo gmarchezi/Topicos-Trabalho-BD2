@@ -1,4 +1,4 @@
--- Geração de Modelo físico
+-- GeraÃ§Ã£o de Modelo fÃ­sico
 -- Sql ANSI 2003 - brModelo.
 
 
@@ -30,7 +30,7 @@ nome_modelo Texto(1),
 comprimento VARCHAR(10)
 )
 
-CREATE TABLE Veiculo_Motorista (
+CREATE TABLE Veiculo_Motorista (
 id_veiculo_motorista INTEGER PRIMARY KEY,
 id_veiculo INTEGER,
 id_motorista INTEGER
@@ -109,12 +109,12 @@ email VARCHAR(10)
 CREATE TABLE Veiculo_Servico (
 id_veiculo_motorista INTEGER,
 id_servico Texto(1),
-FOREIGN KEY(id_veiculo_motorista) REFERENCES Veiculo_Motorista (id_veiculo_motorista),
+FOREIGN KEY(id_veiculo_motorista) REFERENCES Veiculo_Motorista (id_veiculo_motorista),
 FOREIGN KEY(id_servico) REFERENCES Servico (id_servico)
 )
 
-ALTER TABLE Veiculo_Motorista ADD FOREIGN KEY(id_veiculo) REFERENCES Veiculo (id_veiculo)
-ALTER TABLE Veiculo_Motorista ADD FOREIGN KEY(id_motorista) REFERENCES Motorista (id_motorista)
+ALTER TABLE Veiculo_Motorista ADD FOREIGN KEY(id_veiculo) REFERENCES Veiculo (id_veiculo)
+ALTER TABLE Veiculo_Motorista ADD FOREIGN KEY(id_motorista) REFERENCES Motorista (id_motorista)
 ALTER TABLE Veiculo ADD FOREIGN KEY(id_seguro) REFERENCES Seguro (id_seguro)
 ALTER TABLE Servico ADD FOREIGN KEY(id_cliente) REFERENCES Cliente (id_cliente)
 ALTER TABLE Funcionario ADD FOREIGN KEY(id_usuario) REFERENCES Usuario (id_usuario)
