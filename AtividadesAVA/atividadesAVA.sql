@@ -22,15 +22,26 @@ CREATE OR REPLACE FUNCTION quantidade_loops (a integer)
 
 TRIGGER:
 
-CREATE FUNCTION checkModelojaExiste() RETURNS TRIGGER AS ' BEGIN
-IF EXISTS 
-(SELECT m1.nome_modelo, m2.modelo
-FROM Modelo m1, Modelo m2 WHERE m1.nome_modelo = m2.nome_modelo) 
-THEN
-RAISE EXCEPTION ''Erro: modelo ja se encontra na banco de dados!''; END IF; RETURN NULL; END
-'
-LANGUAGE plpgsql;
+CREATE FUNCTION public.checkmodelojaexiste()
+    RETURNS trigger
+    LANGUAGE 'plpgsql'
+    COST 100.0
+    VOLATILE NOT LEAKPROOF 
+AS $BODY$
 
-CREATE TRIGGER checkModeloTrigger AFTER INSERT OR UPDATE OF nome_modelo ON Modelo
+ BEGIN
+IF EXISTS 
+(SELECT m1.nome_modelo, m2.nome_modelo
+FROM modelo m1, modelo m2 WHERE m1.nome_modelo = m2.nome_modelo AND m1.id_modelo != m2.id_modelo 
+ AND m1.nome_modelo IS NOT NULL AND m2.nome_modelo IS NOT NULL) 
+THEN
+RAISE EXCEPTION 'Erro: modelo ja se encontra na banco de dados!'; 
+END IF; 
+RETURN NULL; 
+END 
+
+$BODY$;
+
+CREATE TRIGGER checkmodeloTrigger AFTER INSERT OR UPDATE OF nome_modelo ON modelo
 FOR EACH ROW
-EXECUTE PROCEDURE checkModelojaExiste();
+EXECUTE PROCEDURE checkmodelojaexiste();
