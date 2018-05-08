@@ -1,20 +1,20 @@
-CREATE TABLE Financiamento (
-Financiador VARCHAR(30),
+CREATE TABLE financiamento (
+financiador VARCHAR(30),
 num_parcelas INTEGER,
 valor_parcela FLOAT,
-Valor_total FLOAT,
-id_financiamento INTEGER PRIMARY KEY
+valor_total FLOAT,
+id_financiamento SERIAL PRIMARY KEY
 )
 
-CREATE TABLE Tipo_Veiculo (
+CREATE TABLE tipo_veiculo (
 tipo_combustivel VARCHAR(15),
-id_tipo INTEGER PRIMARY KEY,
+id_tipo SERIAL PRIMARY KEY,
 nome_tipo VARCHAR(15)
 )
 
-CREATE TABLE Modelo (
+CREATE TABLE modelo (
 altura FLOAT,
-id_modelo INTEGER PRIMARY KEY,
+id_modelo SERIAL PRIMARY KEY,
 marca VARCHAR(15),
 largura FLOAT,
 peso FLOAT,
@@ -25,17 +25,17 @@ nome_modelo VARCHAR(15),
 comprimento FLOAT
 )
 
-CREATE TABLE Veiculo_Motorista (
-id_veiculo_motorista INTEGER PRIMARY KEY,
+CREATE TABLE veiculo_motorista (
+id_veiculo_motorista SERIAL PRIMARY KEY,
 id_veiculo INTEGER,
 id_motorista INTEGER
 )
 
-CREATE TABLE Veiculo (
+CREATE TABLE veiculo (
 nome_veiculo VARCHAR(15),
 placa VARCHAR(10),
 chassi VARCHAR(15),
-id_veiculo INTEGER PRIMARY KEY,
+id_veiculo SERIAL PRIMARY KEY,
 status INTEGER,
 id_modelo INTEGER,
 id_tipo INTEGER,
@@ -46,10 +46,10 @@ FOREIGN KEY(id_tipo) REFERENCES Tipo_Veiculo (id_tipo),
 FOREIGN KEY(id_financiamento) REFERENCES Financiamento (id_financiamento)
 )
 
-CREATE TABLE Servico (
+CREATE TABLE servico (
 data_ini DATE,
 valor_contrato FLOAT,
-id_servico INTEGER PRIMARY KEY,
+id_servico SERIAL PRIMARY KEY,
 data_fim DATE,
 status INTEGER,
 origem VARCHAR(30),
@@ -57,60 +57,60 @@ destino VARCHAR(30),
 id_cliente INTEGER
 )
 
-CREATE TABLE Funcionario (
+CREATE TABLE funcionario (
 cargo VARCHAR(30),
-id_funcionario INTEGER PRIMARY KEY,
+id_funcionario SERIAL PRIMARY KEY,
 id_usuario INTEGER
 )
 
-CREATE TABLE Motorista (
+CREATE TABLE motorista (
 endereco VARCHAR(20),
 status INTEGER,
 refeicao FLOAT,
 cpf INTEGER,
 salario FLOAT,
 num_contato VARCHAR(18),
-id_motorista INTEGER PRIMARY KEY,
+id_motorista SERIAL PRIMARY KEY,
 nome VARCHAR(20),
 id_funcionario INTEGER,
-FOREIGN KEY(id_funcionario) REFERENCES Funcionario (id_funcionario)
+FOREIGN KEY(id_funcionario) REFERENCES funcionario (id_funcionario)
 )
 
-CREATE TABLE Seguro (
-id_seguro INTEGER PRIMARY KEY,
+CREATE TABLE seguro (
+id_seguro SERIAL PRIMARY KEY,
 Seguradora VARCHAR(20),
-Plano VARCHAR(20),
-Valor FLOAT,
-Data_vencimento DATE,
-Fim_contrato DATE,
+plano VARCHAR(20),
+valor FLOAT,
+data_vencimento DATE,
+fim_contrato DATE,
 status INTEGER
 )
 
-CREATE TABLE Cliente (
-id_cliente INTEGER PRIMARY KEY,
+CREATE TABLE cliente (
+id_cliente SERIAL PRIMARY KEY,
 id_usuario INTEGER
 )
 
-CREATE TABLE Usuario (
+CREATE TABLE usuario (
 cnpj_cpf INTEGER,
 tipo_usuario VARCHAR(15),
 senha VARCHAR(15),
-id_usuario INTEGER PRIMARY KEY,
+id_usuario SERIAL PRIMARY KEY,
 nome VARCHAR(20),
 status INTEGER,
 email VARCHAR(35)
 )
 
-CREATE TABLE Veiculo_Servico (
+CREATE TABLE veiculo_servico (
 id_veiculo_motorista INTEGER,
 id_servico INTEGER,
-FOREIGN KEY(id_veiculo_motorista) REFERENCES Veiculo_Motorista (id_veiculo_motorista),
-FOREIGN KEY(id_servico) REFERENCES Servico (id_servico)
+FOREIGN KEY(id_veiculo_motorista) REFERENCES veiculo_motorista (id_veiculo_motorista),
+FOREIGN KEY(id_servico) REFERENCES servico (id_servico)
 )
 
-ALTER TABLE Veiculo_Motorista ADD FOREIGN KEY(id_veiculo) REFERENCES Veiculo (id_veiculo)
-ALTER TABLE Veiculo_Motorista ADD FOREIGN KEY(id_motorista) REFERENCES Motorista (id_motorista)
-ALTER TABLE Veiculo ADD FOREIGN KEY(id_seguro) REFERENCES Seguro (id_seguro)
-ALTER TABLE Servico ADD FOREIGN KEY(id_cliente) REFERENCES Cliente (id_cliente)
-ALTER TABLE Funcionario ADD FOREIGN KEY(id_usuario) REFERENCES Usuario (id_usuario)
-ALTER TABLE Cliente ADD FOREIGN KEY(id_usuario) REFERENCES Usuario (id_usuario)
+ALTER TABLE veiculo_motorista ADD FOREIGN KEY(id_veiculo) REFERENCES veiculo (id_veiculo)
+ALTER TABLE veiculo_motorista ADD FOREIGN KEY(id_motorista) REFERENCES motorista (id_motorista)
+ALTER TABLE veiculo ADD FOREIGN KEY(id_seguro) REFERENCES seguro (id_seguro)
+ALTER TABLE servico ADD FOREIGN KEY(id_cliente) REFERENCES cliente (id_cliente)
+ALTER TABLE funcionario ADD FOREIGN KEY(id_usuario) REFERENCES usuario (id_usuario)
+ALTER TABLE cliente ADD FOREIGN KEY(id_usuario) REFERENCES usuario (id_usuario)
