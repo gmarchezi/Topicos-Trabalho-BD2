@@ -1,0 +1,18 @@
+SELECT * FROM cliente LIMIT 10
+SELECT * FROM financiamento LIMIT 10
+SELECT * FROM funcionario LIMIT 10
+SELECT * FROM modelo LIMIT 10
+SELECT * FROM motorista LIMIT 10
+SELECT * FROM seguro LIMIT 10
+SELECT * FROM servico LIMIT 10
+SELECT * FROM tipo_veiculo LIMIT 10
+SELECT * FROM usuario LIMIT 10
+SELECT * FROM veiculo LIMIT 10
+SELECT * FROM veiculo_motorista LIMIT 10
+SELECT * FROM veiculo_servico LIMIT 10
+
+
+CREATE ASSERTION seguro CHECK
+(NOT EXISTS
+(SELECT vencimento FROM seguro where vencimento>DATE
+)
