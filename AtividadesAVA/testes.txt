@@ -1,0 +1,19 @@
+SELECT * FROM cliente LIMIT 10
+SELECT * FROM financiamento LIMIT 10
+SELECT * FROM funcionario LIMIT 10
+SELECT * FROM modelo LIMIT 10
+SELECT * FROM motorista LIMIT 10
+SELECT * FROM seguro LIMIT 10
+SELECT * FROM servico LIMIT 10
+SELECT * FROM tipo_veiculo LIMIT 10
+SELECT * FROM usuario LIMIT 10
+SELECT * FROM veiculo LIMIT 10
+SELECT * FROM veiculo_motorista LIMIT 10
+SELECT * FROM veiculo_servico LIMIT 10
+
+
+INSERT INTO usuario(nome, email, status, senha, cnpj_cpf, tipo_usuario)
+VALUES ('Gabriel Marchezi', 'gabriel@teste.com', 1, '12314', 68666574070, 1)
+VALUES ('Lucas', 'lucas@teste.com', 1, '19824', 88305357023, 1)
+VALUES ('Matheus Kleber', 'zoatime@gmail.com', 1, '9874', 88291184003, 1)
+VALUES ('Temer', 'termer@fora.com', 1, '85151', 57022807094, 1)
