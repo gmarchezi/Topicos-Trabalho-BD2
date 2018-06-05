@@ -20,7 +20,7 @@ O nosso sistema tem como objetivo a administração de frotas veiculares e se ch
 
 ### 5	MODELO CONCEITUAL<br>
 #### 5.1 NOTACAO ENTIDADE RELACIONAMENTO
-![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo_Conceitual_FAT.jpg "Modelo Conceitual")
+![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Modelos/ModeloConceitual_FatCat.jpg "Modelo Conceitual")
 
 #### 5.3 DECISÕES DE PROJETO
     
@@ -93,7 +93,7 @@ O nosso sistema tem como objetivo a administração de frotas veiculares e se ch
       
 ### 6	MODELO LÓGICO<br>
 
-![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo_Logico_FAT2.jpg "Modelo Lógico")
+![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Modelos/ModeloLogico_FatCat.jpg "Modelo Lógico")
 
 ### 7	MODELO FÍSICO<br>
 
