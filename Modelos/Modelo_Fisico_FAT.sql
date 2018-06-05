@@ -28,7 +28,7 @@ comprimento FLOAT
 CREATE TABLE veiculo_motorista (
 id_veiculo_motorista SERIAL PRIMARY KEY,
 id_veiculo INTEGER,
-id_motorista INTEGER
+id_funcionario INTEGER
 )
 
 CREATE TABLE veiculo (
@@ -60,20 +60,12 @@ id_cliente INTEGER
 CREATE TABLE funcionario (
 cargo VARCHAR(30),
 id_funcionario SERIAL PRIMARY KEY,
-id_usuario INTEGER
-)
-
-CREATE TABLE motorista (
-endereco VARCHAR(20),
-status INTEGER,
+id_usuario INTEGER,
+endereco VARCHAR(30),
 refeicao FLOAT,
-cpf INTEGER,
 salario FLOAT,
-num_contato VARCHAR(18),
-id_motorista SERIAL PRIMARY KEY,
-nome VARCHAR(20),
-id_funcionario INTEGER,
-FOREIGN KEY(id_funcionario) REFERENCES funcionario (id_funcionario)
+nome VARCHAR(50),
+cpf BIGINT
 )
 
 CREATE TABLE seguro (
@@ -88,15 +80,17 @@ status INTEGER
 
 CREATE TABLE cliente (
 id_cliente SERIAL PRIMARY KEY,
-id_usuario INTEGER
+id_usuario INTEGER,
+nome VARCHAR(50),
+cnpj_cpf BIGINT,
+tipo_cliente INTEGER,
+FOREIGN KEY (id_usuario) REFERENCES usuario (id_usuario)
 )
 
 CREATE TABLE usuario (
-cnpj_cpf INTEGER,
 tipo_usuario VARCHAR(15),
 senha VARCHAR(15),
 id_usuario SERIAL PRIMARY KEY,
-nome VARCHAR(20),
 status INTEGER,
 email VARCHAR(35)
 )
@@ -109,7 +103,7 @@ FOREIGN KEY(id_servico) REFERENCES servico (id_servico)
 )
 
 ALTER TABLE veiculo_motorista ADD FOREIGN KEY(id_veiculo) REFERENCES veiculo (id_veiculo)
-ALTER TABLE veiculo_motorista ADD FOREIGN KEY(id_motorista) REFERENCES motorista (id_motorista)
+ALTER TABLE veiculo_motorista ADD FOREIGN KEY(id_funcionario) REFERENCES funcionario (id_funcionario)
 ALTER TABLE veiculo ADD FOREIGN KEY(id_seguro) REFERENCES seguro (id_seguro)
 ALTER TABLE servico ADD FOREIGN KEY(id_cliente) REFERENCES cliente (id_cliente)
 ALTER TABLE funcionario ADD FOREIGN KEY(id_usuario) REFERENCES usuario (id_usuario)
