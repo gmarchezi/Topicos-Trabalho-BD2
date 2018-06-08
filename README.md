@@ -115,13 +115,24 @@ Link Modelo Físico: https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/mast
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	GERACAO DE DADOS (MÍNIMO DE 10 REGISTROS PARA CADA TABELA NO BANCO DE DADOS)<br>
 
-## Data de Entrega: (18/09/2017)
+## Data de Entrega: (18/05/2018)
 
 <br>
 OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 
 #### 9.2	SELECT DAS TABELAS COM PRIMEIROS 10 REGISTROS INSERIDOS <br> 
-    Data de Entrega: (Data a ser definida)
+    
+      SELECT * FROM cliente LIMIT 10
+      SELECT * FROM financiamento LIMIT 10
+      SELECT * FROM funcionario LIMIT 10
+      SELECT * FROM modelo LIMIT 10
+      SELECT * FROM seguro LIMIT 10
+      SELECT * FROM servico LIMIT 10
+      SELECT * FROM tipo_veiculo LIMIT 10
+      SELECT * FROM usuario LIMIT 10
+      SELECT * FROM veiculo LIMIT 10
+      SELECT * FROM veiculo_motorista LIMIT 10
+      SELECT * FROM veiculo_servico LIMIT 10
 <br>
 
 #### 9.3	SELECT DAS VISÕES COM PRIMEIROS 10 REGISTROS DA VIEW <br>
@@ -162,7 +173,7 @@ OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da 
         https://github.com/discipbd2/base-de-testes-locadora
         
 
-
+## Data de Entrega: (12/06/2018)
 #### 9.7	Backup do Banco de Dados<br>
         Detalhamento do backup.
         a) Tempo
@@ -171,10 +182,6 @@ OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da 
         d) Tempo para restauração
         e) Teste de restauração (script sql)
         f) Tempo para restauração (script sql)
-<br>
-
-Data de Entrega: (Data a ser definida)
-<br>
 
 #### 9.8	APLICAÇAO DE ÍNDICES E TESTES DE PERFORMANCE<br>
     a) Lista de índices, tipos de índices com explicação de porque foram implementados nas consultas 
@@ -183,24 +190,17 @@ Data de Entrega: (Data a ser definida)
     d) Escolher as consultas mais complexas para serem analisadas (consultas com menos de 2 joins não serão aceitas)
     e) As imagens do Explain devem ser inclusas no trabalho, bem como explicações sobre os resultados obtidos.
     f) Inclusão de tabela mostrando as 10 execuções, excluindo-se o maior e menor tempos para cada consulta e 
-    obtendo-se a media dos outros valores como resultado médio final.
-<br>
-    Data de Entrega: (Data a ser definida)
-<br>   
+    obtendo-se a media dos outros valores como resultado médio final.   
 
+## Data de Entrega: (29/06/2018)
 #### 9.9	ANÁLISE DOS DADOS COM ORANGE<br>    
         a) captura das informaçõs
         b) integração com banco de dados em desenvolvimento
         c) aplicação de algoritmos e interpretação dos resultados
         c) atualização da documentação do trabalho incluindo a mineração de dados
-<br>
-    Data de Entrega: (Data a ser definida)
-<br>
 
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO/ SLIDES E ENTREGA FINAL<br>
-<br>
-    Data de Entrega: (Data a ser definida)
-<br>
+
 
 ### 11	DIFICULDADES ENCONTRADAS PELO GRUPO<br>  
 
