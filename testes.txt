@@ -1,16 +1,14 @@
-SELECT * FROM cliente LIMIT 10
-SELECT * FROM financiamento LIMIT 10
-SELECT * FROM funcionario LIMIT 10
-SELECT * FROM modelo LIMIT 10
-SELECT * FROM motorista LIMIT 10
-SELECT * FROM seguro LIMIT 10
-SELECT * FROM servico LIMIT 10
-SELECT * FROM tipo_veiculo LIMIT 10
-SELECT * FROM usuario LIMIT 10
-SELECT * FROM veiculo LIMIT 10
-SELECT * FROM veiculo_motorista LIMIT 10
-SELECT * FROM veiculo_servico LIMIT 10
-
+seguro - 10 mil registro
+veiculo - 10 mil registro
+modelo - 10 registro
+tipo_veiculo - 3 registro
+financiamento - 10 mil registro
+veiculo_motorista - 100 mil
+funcionario - 10 mil registro
+veiculo_servico - 1,5 milhao
+servico - 1,5 milhao
+usuario - 10 mil
+cliente - 10 mil
 
 CREATE ASSERTION seguro CHECK
 (NOT EXISTS
