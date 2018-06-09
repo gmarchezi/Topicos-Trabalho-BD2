@@ -26,15 +26,14 @@ VALUES(3),
 (7),
 (8)
 
-
 INSERT INTO modelo(nome_modelo, marca, ano, altura, peso, eixos, largura, comprimento, capacidade)
 VALUES('V70 T 2.0 20v 180cv 4p Aut.', 'Volvo', 2002, 3.5, 350, 4, 400, 700, 500),
 ('V70 R 2.5 300cv AWD Mec.', 'Volvo', 2004, 3.5, 350, 4, 400, 700, 500),
-('Trafic Furgao Carga 2.2', 'GM - Chevrolet', 1992, 3.l5, 350, 4, 400, 700, 500),
-('Start Van 1.0 8V 4p', 'EFFA', 2011, 3.l5, 350, 4, 400, 700, 500),
+('Trafic Furgao Carga 2.2', 'GM - Chevrolet', 1992, 3.5, 350, 4, 400, 700, 500),
+('Start Van 1.0 8V 4p', 'EFFA', 2011, 3.5, 350, 4, 400, 700, 500),
 ('ULC PICAPE Longa 1.0 8V 2p', 'EFFA', 2011, 3.5, 350, 4, 400, 700, 500),
 ('Start Picape L 1.0 8V 2p', 'EFFA', 2002, 3.5, 350, 4, 400, 700, 500),
-('Sprinter 312 Van Luxo 15lug. Diesel', 'Mercedes-Benz', 2000, 3.l5, 350, 4, 400, 700, 500),
+('Sprinter 312 Van Luxo 15lug. Diesel', 'Mercedes-Benz', 2000, 3.5, 350, 4, 400, 700, 500),
 ('Tector Attack 150E21', 'Iveco', 2001, 3.5, 350, 4, 400, 700, 500),
 ('Tector Auto-Shift 170E30', 'Iveco', 2003, 3.5, 350, 4, 400, 700, 500),
 ('Tector 240E30', 'Iveco', 2005, 3.5, 350, 4, 400, 700, 500)
