@@ -47,6 +47,31 @@ FOR EACH ROW
 EXECUTE PROCEDURE checkmodelojaexiste();
 
 
+CREATE FUNCTION public.checkCNPJjaexiste()
+    RETURNS trigger
+    LANGUAGE 'plpgsql'
+    COST 100.0
+    VOLATILE NOT LEAKPROOF 
+AS $BODY$
+
+ BEGIN
+IF EXISTS 
+(SELECT c1.cpnj_cpf, c2.cpnj_cpf
+FROM cliente c1, cliente c2 WHERE c1.cnpj_cpf = c2.cnpj_cpf AND c1.id_cliente != c2.id_cliente 
+ AND c1.cnpj_cpf IS NOT NULL AND c2.cnpj_cpf IS NOT NULL) 
+THEN
+RAISE EXCEPTION 'Erro: CNPJ ou CPF ja se encontra na banco de dados!'; 
+END IF; 
+RETURN NULL; 
+END 
+
+$BODY$;
+
+CREATE TRIGGER checkCNPJTrigger AFTER INSERT OR UPDATE OF cnpj_cpf ON cliente
+FOR EACH ROW
+EXECUTE PROCEDURE checkCNPJjaexiste();
+
+
 CREATE VIEW relatorio_veiculo_fin_seguro AS
     SELECT v.nome_veiculo, v.chassi, v.placa,
     m.nome_modelo, m.ano, 
