@@ -83,7 +83,7 @@ id_cliente SERIAL PRIMARY KEY,
 id_usuario INTEGER,
 nome VARCHAR(50),
 cnpj_cpf BIGINT,
-tipo_cliente INTEGER,
+tipo_cliente INTEGER, /* 1 para pessoa fisica e 0 para pessoa juridica */
 FOREIGN KEY (id_usuario) REFERENCES usuario (id_usuario)
 )
 
