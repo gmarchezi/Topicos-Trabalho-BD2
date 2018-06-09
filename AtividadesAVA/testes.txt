@@ -50,3 +50,9 @@ VALUES('Volvo V70', '36539520889', 'HQF-5728', 1, 1),
 ('Sprinter 312 Van Luxo 15lug. Diesel', '50246184759', 'NCJ-3826', 7, 1),
 ('Tector Attack 150E21', '00334727006', 'NCK-4131', 8, 1),
 ('Tector 240E30', '67820326551', 'IAA-5707', 9, 1)
+
+INSERT INTO tipo_veiculo (nome_tipo,tipo_combustivel)
+ VALUES('Carro','Gasolina'),
+ ('Carro','Alcool'),
+ ('Carro','Flex'),
+ ('Caminhão','Diesel')
