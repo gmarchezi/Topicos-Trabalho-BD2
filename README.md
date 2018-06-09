@@ -25,13 +25,6 @@ O nosso sistema tem como objetivo a administração de frotas veiculares e se ch
 #### 5.3 DECISÕES DE PROJETO
     
 <p align="justify">Modelo: em nosso projeto optamos por separar modelo do veiculo, pois a classe veiculo estava muito grande e isto poderia prejudicar a manutenibilidade do sistema.<br>
-    
-    [atributo]: [descrição da decisão]
-    
-    EXEMPLO:
-    a) Campo endereço: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
-    pode possuir para cada departamento mais de uma localização... 
-    b) justifique!
 
 #### 5.4 DESCRIÇÃO DOS DADOS 
     
@@ -78,8 +71,6 @@ O nosso sistema tem como objetivo a administração de frotas veiculares e se ch
         num_parcelas: Campo que armazena o número de parcelas do financiamento.<br>
         valor_parcela: Campo que armazena o valor de cada parcela.<br>
         valor_total: Campo que armazena o valor total do financiamento.<br>
-        
-    Veiculo_Motorista: <br> 
     
     Motorista: Tabela que armazena informações de um determinado motorista.<br>
         id_motorista:  Chave primária da tabela Motorista.<br>
@@ -166,7 +157,6 @@ OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da 
 #### 9.4	LISTA DE CODIGOS DAS FUNÇÕES, ASSERÇOES E TRIGGERS<br>
       
 <p align="justify">Iremos Utilizar duas Triggers para que não seja inserido no banco modelo iguais de veiculo, e nem dois clientes com o mesmo           registro</p>
-      
       
       
       CREATE FUNCTION public.checkmodelojaexiste()
