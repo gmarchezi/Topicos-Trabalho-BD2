@@ -45,3 +45,30 @@ $BODY$;
 CREATE TRIGGER checkmodeloTrigger AFTER INSERT OR UPDATE OF nome_modelo ON modelo
 FOR EACH ROW
 EXECUTE PROCEDURE checkmodelojaexiste();
+
+
+CREATE VIEW relatorio_veiculo_fin_seguro AS
+    SELECT v.nome_veiculo, v.chassi, v.placa,
+    m.nome_modelo, m.ano, 
+    s.seguradora, s.plano, s.valor     
+    FROM veiculo v
+    JOIN seguro s ON s.id_seguro = v.id_seguro
+    JOIN modelo m ON m.id_modelo = v.id_modelo
+
+    WHERE v.status = 1 AND CURRENT_DATE + integer '5' = s.fin_contrato AND s.status = 1
+
+SELECT * FROM relatorio_veiculo_fin_seguro
+
+CREATE VIEW relatorio_mes_servico AS
+    SELECT c.nome as nome_cliente, c.cnpj_cpf, s.id_servico,
+    s.valor_contrato, s.origem, s.destino, v.nome_veiculo 
+    FROM servico s 
+    JOIN cliente c ON c.id_cliente = s.id_cliente
+    JOIN veiculo_servico vs ON vs.id_servico = s.id_servico
+    JOIN veiculo v ON v.id_veiculo = vs.id_veiculo
+
+    WHERE CONCAT(DATE_PART('YEAR', CURRENT_TIMESTAMP),'-', DATE_PART('MONTH', CURRENT_TIMESTAMP), '-01') <= s.data_fin
+    AND
+    CONCAT(DATE_PART('YEAR', CURRENT_TIMESTAMP),'-', DATE_PART('MONTH', CURRENT_TIMESTAMP), '-31') >= s.data_fin
+
+SELECT * FROM relatorio_mes_servico
