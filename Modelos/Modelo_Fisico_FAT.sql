@@ -21,7 +21,7 @@ peso FLOAT,
 capacidade FLOAT,
 ano INTEGER,
 eixos INTEGER,
-nome_modelo VARCHAR(15),
+nome_modelo VARCHAR(50),
 comprimento FLOAT
 )
 
