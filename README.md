@@ -164,11 +164,59 @@ OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da 
 <br>
 
 #### 9.4	LISTA DE CODIGOS DAS FUNÇÕES, ASSERÇOES E TRIGGERS<br>
-        Detalhamento sobre funcionalidade de cada código.
-        a) Objetivo
-        b) Código do objeto (função/trigger/asserção)
-        c) exemplo de dados para aplicação
-        d) resultados em forma de tabela/imagem
+      
+<p align="justify">Iremos Utilizar duas Triggers para que não seja inserido no banco modelo iguais de veiculo, e nem dois clientes com o mesmo           registro</p>
+      
+      
+      
+      CREATE FUNCTION public.checkmodelojaexiste()
+          RETURNS trigger
+          LANGUAGE 'plpgsql'
+          COST 100.0
+          VOLATILE NOT LEAKPROOF 
+      AS $BODY$
+
+       BEGIN
+      IF EXISTS 
+      (SELECT m1.nome_modelo, m2.nome_modelo
+      FROM modelo m1, modelo m2 WHERE m1.nome_modelo = m2.nome_modelo AND m1.id_modelo != m2.id_modelo 
+       AND m1.nome_modelo IS NOT NULL AND m2.nome_modelo IS NOT NULL) 
+      THEN
+      RAISE EXCEPTION 'Erro: modelo ja se encontra na banco de dados!'; 
+      END IF; 
+      RETURN NULL; 
+      END 
+
+      $BODY$;
+
+      CREATE TRIGGER checkmodeloTrigger AFTER INSERT OR UPDATE OF nome_modelo ON modelo
+      FOR EACH ROW
+      EXECUTE PROCEDURE checkmodelojaexiste();
+
+
+      CREATE FUNCTION public.checkCNPJjaexiste()
+          RETURNS trigger
+          LANGUAGE 'plpgsql'
+          COST 100.0
+          VOLATILE NOT LEAKPROOF 
+      AS $BODY$
+
+       BEGIN
+      IF EXISTS 
+      (SELECT c1.cpnj_cpf, c2.cpnj_cpf
+      FROM cliente c1, cliente c2 WHERE c1.cnpj_cpf = c2.cnpj_cpf AND c1.id_cliente != c2.id_cliente 
+       AND c1.cnpj_cpf IS NOT NULL AND c2.cnpj_cpf IS NOT NULL) 
+      THEN
+      RAISE EXCEPTION 'Erro: CNPJ ou CPF ja se encontra na banco de dados!'; 
+      END IF; 
+      RETURN NULL; 
+      END 
+
+      $BODY$;
+
+      CREATE TRIGGER checkCNPJTrigger AFTER INSERT OR UPDATE OF cnpj_cpf ON cliente
+      FOR EACH ROW
+      EXECUTE PROCEDURE checkCNPJjaexiste();
 <br>
 
 #### 9.5	Administração do banco de dados<br>
