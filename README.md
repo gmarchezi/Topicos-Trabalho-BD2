@@ -218,7 +218,8 @@ OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da 
             fora do horário comercial, e backups diferenciais de 2 em 2 horas em horário comercial. O 
             banco será criptografado, garantindo que apenas pessoas com acesso ao banco consigam
             vizualizar os dados. Diariamente serão emitidos relátorios para análise do banco e seus
-            backups.
+            backups. As autorizações de acesso serão rígidas, os usuários terão pré-definidos dias da
+            semana e horários que poderão acessar o banco.
             
         b) Estimativas de aquisição de recursos para armazenamento e processamento da informação:
             O banco será executado em um Servidor em torre Dell PowerEdge T440 (Processador Intel Xeon Bronze 3106,
