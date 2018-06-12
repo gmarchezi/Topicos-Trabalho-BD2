@@ -213,9 +213,26 @@ OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da 
         Descrição detalhada sobre como serão executadas no banco de dados as <br>
         seguintes atividades.
         a) Segurança e autorização de acesso:
-        b) Estimativas de aquisição de recursos para armazenamento e processamento da informação
+            Tendo como referência os princípios da segurança da informação, confidencialidade,
+            integridade e disponibilidade da informação, serão feitos backups completos diariamente,
+            fora do horário comercial, e backups diferenciais de 2 em 2 horas em horário comercial. O 
+            banco será criptografado, garantindo que apenas pessoas com acesso ao banco consigam
+            vizualizar os dados. Diariamente serão emitidos relátorios para análise do banco e seus
+            backups.
+            
+        b) Estimativas de aquisição de recursos para armazenamento e processamento da informação:
+            O banco será executado em um Servidor em torre Dell PowerEdge T440 (Processador Intel Xeon Bronze 3106,
+            8GB de RAM e HD de 1TB) que possui um custo estimado de R$7.699,00.
+            
         c) Planejamento de rotinas de manutenção e monitoramento do banco
-        d) Plano com frequencia de análises visando otimização de performance
+           Diariamente, antes de ser feito o backup completo, será verificada a integridade do banco,
+           a recuperação de espaço em disco ocupado por linhas atualizadas ou removidas e logo após o
+           backup completo será emitido um relatório com informações do banco e dos backups.
+           
+        d) Plano com frequencia de análises visando otimização de performance:
+           Diariamente, antes de ser feito o backup completo fora do horário comercial,será feita
+           a atualização das estatísticas do planejador de comandos do banco de dados, via comando
+           ANALYZE para todo banco.
 <br>
 
 #### 9.6	GERACAO DE DADOS (MÍNIMO DE 1,5 MILHÃO DE REGISTROS PARA PRINCIPAL RELAÇAO)<br>
