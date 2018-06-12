@@ -238,7 +238,8 @@ OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da 
 
 #### 9.6	GERACAO DE DADOS (MÍNIMO DE 1,5 MILHÃO DE REGISTROS PARA PRINCIPAL RELAÇAO)<br>
 
-Link Geração de Dados: https://github.com/gmarchezi/Topicos-Trabalho-BD2/tree/master/AtividadesAVA/GeracaoDados
+![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/inse_cmd.PNG?raw=true "Img CMD")
+![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/tabela_de_tabelas.PNG?raw=true "Img Tabela")
         
 ## Data de Entrega: (12/06/2018)
 #### 9.7	Backup do Banco de Dados<br>
