@@ -137,7 +137,7 @@ OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da 
 
           WHERE v.status = 1 AND CURRENT_DATE + integer '5' = s.fin_contrato AND s.status = 1
 
-      SELECT * FROM relatorio_veiculo_fin_seguro
+      SELECT * FROM relatorio_veiculo_fin_seguro LIMIT 10
 
       CREATE VIEW relatorio_mes_servico AS
           SELECT c.nome as nome_cliente, c.cnpj_cpf, s.id_servico,
@@ -151,7 +151,7 @@ OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da 
           AND
           CONCAT(DATE_PART('YEAR', CURRENT_TIMESTAMP),'-', DATE_PART('MONTH', CURRENT_TIMESTAMP), '-31') >= s.data_fin
 
-      SELECT * FROM relatorio_mes_servico
+      SELECT * FROM relatorio_mes_servico LIMIT 10
 <br>
 
 #### 9.4	LISTA DE CODIGOS DAS FUNÇÕES, ASSERÇOES E TRIGGERS<br>
@@ -237,15 +237,9 @@ OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da 
 <br>
 
 #### 9.6	GERACAO DE DADOS (MÍNIMO DE 1,5 MILHÃO DE REGISTROS PARA PRINCIPAL RELAÇAO)<br>
-        a) principal tabela do sistema deve ter no mínimo 1,5 milhão de registros
-        b) tabelas diretamente relacionadas a tabela principal 100 mil registros
-        c) tabelas auxiliares de relacao multivalorada mínimo de 10 registros
-        d) registrar o tempo de inserção em cada uma das tabelas do banco de dados
-        e) especificar a quantidade de registros inseridos em cada tabela
-        Para melhor compreensão verifiquem o exemplo na base de testes:<br>
-        https://github.com/discipbd2/base-de-testes-locadora
-        
 
+Link Geração de Dados: https://github.com/gmarchezi/Topicos-Trabalho-BD2/tree/master/AtividadesAVA/GeracaoDados
+        
 ## Data de Entrega: (12/06/2018)
 #### 9.7	Backup do Banco de Dados<br>
         Detalhamento do backup.
