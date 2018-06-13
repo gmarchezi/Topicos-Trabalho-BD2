@@ -238,7 +238,7 @@ OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da 
 
 #### 9.6	GERACAO DE DADOS (MÍNIMO DE 1,5 MILHÃO DE REGISTROS PARA PRINCIPAL RELAÇAO)<br>
 
-Base de dados gerados para o banco:
+<br>Base de dados gerados para o banco:
 
 veiculo - 10.000 registros
 modelo - 10 registros
@@ -248,12 +248,12 @@ funcionario - 10.000 registros
 veiculo_servico - 1.500.000 registros
 servico - 1.500.000 registros
 usuario - 20.000 registros
-cliente - 10.000 registros
+cliente - 10.000 registros<br>
 
 ![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/inse_cmd.PNG?raw=true "Img CMD")
-Inserção de dados na tabela.
+<br>Inserção de dados na tabela.<br>
 ![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/tabela_de_tabelas.PNG?raw=true "Img Tabela")
-Estatisticas do banco após a inserção dos dados.
+<br>Estatisticas do banco após a inserção dos dados.<br>
         
 ## Data de Entrega: (12/06/2018)
 #### 9.7	Backup do Banco de Dados<br>
