@@ -250,10 +250,11 @@ servico - 1.500.000 registros<br>
 usuario - 20.000 registros<br>
 cliente - 10.000 registros<br>
 
-![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/inse_cmd.PNG?raw=true "Img CMD")
 <br>Inserção de dados na tabela.<br>
-![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/tabela_de_tabelas.PNG?raw=true "Img Tabela")
+![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/inse_cmd.PNG?raw=true "Img CMD")
 <br>Estatisticas do banco após a inserção dos dados.<br>
+![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/tabela_de_tabelas.PNG?raw=true "Img Tabela")
+
         
 ## Data de Entrega: (12/06/2018)
 #### 9.7	Backup do Banco de Dados<br>
