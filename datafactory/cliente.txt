@@ -1,0 +1,11 @@
+INSERT INTO cliente(id_usuario,nome,cnpj_cpf,tipo_cliente)
+ VALUES(1,'Ralph Logan',24064555210,1),
+(2,'Barb Collins',61586702797903,0),
+(3,'Sydney Olsen',09874200297809,0),
+(4,'Dakota Caldwell',48368183030,1),
+(5,'Marion Cash',52859311777,1),
+(6,'Ted Reilly',17155776357766,0),
+(7,'Kyle Dudley',89669910081906,0),
+(8,'Destiny Pickett',84871971325,1),
+(9,'Candy Walton',89560071924249,0),
+(10,'Thelma Galloway',58590916804,1)
