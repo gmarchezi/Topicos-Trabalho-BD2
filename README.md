@@ -113,7 +113,7 @@ OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da 
 
 #### 9.2	SELECT DAS TABELAS COM PRIMEIROS 10 REGISTROS INSERIDOS  
 
-
+<br>
 SELECT * FROM cliente LIMIT 10
 ![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/Select/cliente.PNG?raw=true "SELECT * FROM cliente LIMIT 10")
 
@@ -146,7 +146,7 @@ SELECT * FROM veiculo_motorista LIMIT 10
 
 SELECT * FROM veiculo_servico LIMIT 10
 ![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/Select/veiculo_servico.PNG?raw=true "SELECT * FROM veiculo_servico LIMIT 10")
-
+<br>
 
 #### 9.3	SELECT DAS VISÕES COM PRIMEIROS 10 REGISTROS DA VIEW <br>
      CREATE VIEW relatorio_veiculo_fin_seguro AS
