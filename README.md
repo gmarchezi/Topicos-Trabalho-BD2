@@ -113,7 +113,8 @@ OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da 
 
 #### 9.2	SELECT DAS TABELAS COM PRIMEIROS 10 REGISTROS INSERIDOS <br> 
     
-      SELECT * FROM cliente LIMIT 10
+    ![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/Select/cliente.PNG?raw=true"SELECT * FROM cliente LIMIT 10")
+      
       SELECT * FROM financiamento LIMIT 10
       SELECT * FROM funcionario LIMIT 10
       SELECT * FROM modelo LIMIT 10
