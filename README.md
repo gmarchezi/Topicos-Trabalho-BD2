@@ -324,6 +324,14 @@ Tabela Usuário:<br>
         d) Tempo para restauração
         e) Teste de restauração (script sql)
         f) Tempo para restauração (script sql)
+ 
+![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/backup_do_banco.PNG?raw=true "1")
+
+![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/verbose_1.PNG?raw=true "2")
+
+![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/verbose_2.PNG?raw=true "3")
+
+![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/verbose_3.PNG?raw=true "4")
 
 #### 9.8	APLICAÇAO DE ÍNDICES E TESTES DE PERFORMANCE<br>
     a) Lista de índices, tipos de índices com explicação de porque foram implementados nas consultas 
