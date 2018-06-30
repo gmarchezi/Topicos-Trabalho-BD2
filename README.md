@@ -157,31 +157,36 @@ SELECT * FROM veiculo_servico LIMIT 10
 ![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/Select/veiculo_servico.PNG?raw=true "SELECT * FROM veiculo_servico LIMIT 10")
 
 #### 9.3	SELECT DAS VISÕES COM PRIMEIROS 10 REGISTROS DA VIEW <br>
+     
      CREATE VIEW relatorio_veiculo_fin_seguro AS
-          SELECT v.nome_veiculo, v.chassi, v.placa,
-          m.nome_modelo, m.ano, 
-          s.seguradora, s.plano, s.valor     
-          FROM veiculo v
-          JOIN seguro s ON s.id_seguro = v.id_seguro
-          JOIN modelo m ON m.id_modelo = v.id_modelo
+     (
+     SELECT v.nome_veiculo, v.chassi, v.placa,
+     m.nome_modelo, m.ano, 
+     s.seguradora, s.plano, s.valor     
+     FROM veiculo v
+     JOIN seguro s ON s.id_seguro = v.id_seguro
+     JOIN modelo m ON m.id_modelo = v.id_modelo
+     WHERE v.status = 1 AND CURRENT_DATE + integer '5' = s.fim_contrato AND s.status = 1
+     )
+     
+     SELECT * FROM relatorio_veiculo_fin_seguro LIMIT 10
 
-          WHERE v.status = 1 AND CURRENT_DATE + integer '5' = s.fin_contrato AND s.status = 1
-
-      SELECT * FROM relatorio_veiculo_fin_seguro LIMIT 10
-
-      CREATE VIEW relatorio_mes_servico AS
-          SELECT c.nome as nome_cliente, c.cnpj_cpf, s.id_servico,
-          s.valor_contrato, s.origem, s.destino, v.nome_veiculo 
-          FROM servico s 
-          JOIN cliente c ON c.id_cliente = s.id_cliente
-          JOIN veiculo_servico vs ON vs.id_servico = s.id_servico
-          JOIN veiculo v ON v.id_veiculo = vs.id_veiculo
-
-          WHERE CONCAT(DATE_PART('YEAR', CURRENT_TIMESTAMP),'-', DATE_PART('MONTH', CURRENT_TIMESTAMP), '-01') <= s.data_fin
-          AND
-          CONCAT(DATE_PART('YEAR', CURRENT_TIMESTAMP),'-', DATE_PART('MONTH', CURRENT_TIMESTAMP), '-31') >= s.data_fin
-
-      SELECT * FROM relatorio_mes_servico LIMIT 10
+     CREATE VIEW relatorio_mes_servico AS
+     (
+     SELECT c.nome as nome_cliente, c.cnpj_cpf, s.id_servico,
+     s.valor_contrato, s.origem, s.destino, v.nome_veiculo 
+     FROM servico s 
+     JOIN cliente c ON c.id_cliente = s.id_cliente
+     JOIN veiculo_servico vs ON vs.id_servico = s.id_servico
+     JOIN veiculo_motorista vm ON vm.id_veiculo_motorista = vs.id_veiculo_motorista
+     JOIN veiculo v ON v.id_veiculo = vm.id_veiculo
+     WHERE DATE(CONCAT(DATE_PART('YEAR', CURRENT_TIMESTAMP),'-', DATE_PART('MONTH', CURRENT_TIMESTAMP), '-01')) <= s.data_fim
+     AND
+     DATE(CONCAT(DATE_PART('YEAR', CURRENT_TIMESTAMP),'-', DATE_PART('MONTH', CURRENT_TIMESTAMP), '-31')) >= s.data_fim
+     )
+     
+     SELECT * FROM relatorio_mes_servico LIMIT 10
+     
 <br>
 
 #### 9.4	LISTA DE CODIGOS DAS FUNÇÕES, ASSERÇOES E TRIGGERS<br>
