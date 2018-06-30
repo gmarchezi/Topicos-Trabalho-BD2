@@ -146,7 +146,7 @@ SELECT * FROM usuario LIMIT 10
 
 SELECT * FROM veiculo LIMIT 10 
 
-![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/Select/veiculo.PNG?raw=true "SELECT * FROM veiculo LIMIT 10")
+![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/Select/veiculo_1.PNG?raw=true "SELECT * FROM veiculo LIMIT 10")
 
 SELECT * FROM veiculo_motorista LIMIT 10 
 
