@@ -92,17 +92,15 @@ Link Modelo Físico: https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/mast
 
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
-        Detalhamento sobre as informações e processo de obtenção ou geração dos dados.
-        Referenciar todas as fontes referentes a:
-        a) obtenção dos dados
-        b) obtenção de códigos reutilizados
-        c) fontes de estudo para desenvolvimento do projeto
+
+  Será explicado melhor na seção 9.6;
+  Link da Geração de Dados: https://github.com/gmarchezi/Topicos-Trabalho-BD2/tree/master/AtividadesAVA/GeracaoDados
         
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELAS E INSERÇÃO DOS DADOS (ARQUIVO ÚNICO COM):
-        a) inclusão das instruções para criação das tabelas e estruturas de amazenamento do BD
-        b) inclusão das instruções de inserção dos dados nas referidas tabelas
-        c) inclusão das instruções para execução de outros procedimentos necessários
-
+        
+  Link:https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo_Fisico_FAT.sql
+  INSERÇÃO DOS DADOS: Explicado melhor na seção 9.6.
+        
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	GERACAO DE DADOS (MÍNIMO DE 10 REGISTROS PARA CADA TABELA NO BANCO DE DADOS)<br>
 
@@ -119,7 +117,7 @@ SELECT * FROM cliente LIMIT 10
 ![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/Select/cliente.PNG?raw=true "SELECT * FROM cliente LIMIT 10")
 
 SELECT * FROM financiamento LIMIT 10 
-![Alt text]( "SELECT * FROM financiamento LIMIT 10")
+![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/Select/financiamento.PNG?raw=true "SELECT * FROM financiamento LIMIT 10")
 
 
 SELECT * FROM funcionario LIMIT 10 
@@ -132,7 +130,7 @@ SELECT * FROM modelo LIMIT 10
 
 SELECT * FROM seguro LIMIT 10 
 
-![Alt text]( "SELECT * FROM seguro LIMIT 10")
+![Alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/Select/seguro.PNG?raw=true "SELECT * FROM seguro LIMIT 10")
 
 SELECT * FROM servico LIMIT 10 
 
@@ -286,6 +284,30 @@ cliente - 10.000 registros<br>
 ![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/inse_cmd.PNG?raw=true "Img CMD")
 <br>Estatisticas do banco após a inserção dos dados.<br>
 ![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/tabela_de_tabelas.PNG?raw=true "Img Tabela")
+<br>
+
+<br>Tempo de Execução da Inserção nas Tabelas:
+<br>
+Foi realizado em um Nootebook DELL i3 2º geração, 2.3GHz 4GB de RAM.<br>
+
+Tabela Usuário:<br>
+![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/tempo_insert/tabela_usuario.JPG?raw=true "Img CMD U")
+
+<br>Tabela Funcionario:<br>
+![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/tempo_insert/tabela_funcionario.JPG?raw=true "Img CMD F")
+
+<br>Tabela Cliente:<br>
+![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/tempo_insert/tabela_cliente.JPG?raw=true "Img CMD C")
+
+<br>Tabela Veiculo:<br>
+![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/tempo_insert/tabela_veiculo.JPG?raw=true "Img CMD V")
+
+<br>Tabela Veiculo_Motorista:<br>
+![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/tempo_insert/tabela_veiculo_motorista.JPG?raw=true "Img CMD VM")
+
+<br>Tabela Servico:<br>
+![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/tempo_insert/tabela_servico.JPG?raw=true "Img CMD S")
+
 
         
 ## Data de Entrega: (12/06/2018)
