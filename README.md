@@ -334,13 +334,24 @@ Tabela Usuário:<br>
 ![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/verbose_3.PNG?raw=true "4")
 
 #### 9.8	APLICAÇAO DE ÍNDICES E TESTES DE PERFORMANCE<br>
-    a) Lista de índices, tipos de índices com explicação de porque foram implementados nas consultas 
-    b) Performance esperada VS Resultados obtidos
-    c) Tabela de resultados comparando velocidades antes e depois da aplicação dos índices (constando velocidade esperada com planejamento, sem indice e com índice Vs velocidade de execucao real com índice e sem índice).
-    d) Escolher as consultas mais complexas para serem analisadas (consultas com menos de 2 joins não serão aceitas)
-    e) As imagens do Explain devem ser inclusas no trabalho, bem como explicações sobre os resultados obtidos.
-    f) Inclusão de tabela mostrando as 10 execuções, excluindo-se o maior e menor tempos para cada consulta e 
-    obtendo-se a media dos outros valores como resultado médio final.   
+    
+    CREATE INDEX indice_servico ON servico
+    USING BTREE (id_servico)
+
+    EXPLAIN ANALYZE SELECT * FROM servico s
+    JOIN cliente c ON c.id_cliente = s.id_cliente
+    JOIN veiculo_servico vs ON vs.id_servico = s.id_servico
+    JOIN veiculo_motorista vm ON vm.id_veiculo_motorista = vs.id_veiculo_motorista
+    JOIN veiculo v ON v.id_veiculo = vm.id_veiculo
+<br>
+Explain sem Indice:
+
+![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/explain_sem_indice_mais_de_2join.PNG?raw=true "1")
+
+Explain com Indice:
+
+![alt text](https://github.com/gmarchezi/Topicos-Trabalho-BD2/blob/master/Images/explain_com_indice_mais_de_2join.PNG?raw=true "1")
+
 
 ## Data de Entrega: (29/06/2018)
 #### 9.9	ANÁLISE DOS DADOS COM ORANGE<br>    
